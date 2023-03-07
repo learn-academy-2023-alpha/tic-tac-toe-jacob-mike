@@ -12,14 +12,13 @@ When creating a project it is important to think about organization of your code
 ### 📚 User Stories
 
 - As a user, I can see a three by three grid game board on the page.
-    Branch: 
+    Branch: Grid
     -In App.js: use .map to iterate each square component onto the browser. 
     -Use CSS: flex box to wrap and center gameboard
 
 - As a user, I can click on a square to mark it.
-    Branch:
-    -In SquareUI.js: Create onClick attribute on each square
-    -Create function to 
+    Branch:Mark it 
+    -In SquareUI.js: Create onClick attribute on each square, inside the div tag. That onclick attribute wil be equal to a function. Create function to handle the onclick event.iNSIDE THIS FUNCTION WE WILL CALL another function that will handle the game play for this specific function we will pass in index. On our app .js componet we have to create this function that will handle the game play.Inside this function we need to UPDATE the state value after square is clicked. 
 
 
 - As a user, my partner can click on a square after me and see their mark.
