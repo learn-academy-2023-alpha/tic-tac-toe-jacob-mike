@@ -4,7 +4,15 @@ import './App.css'
 
 const App = () => {
   const [squares, setSquares] = useState(Array(9).fill(null))
-
+ 
+  const handleGamePlay =(index)=>{
+  let updateGrid = [...squares]
+ updateGrid[index] = "❌";
+ setSquares(updateGrid);
+ 
+ }
+ console.log(handleGamePlay);
+ console.log(setSquares);
   return (
     <>
       <h1>Tic Tac Toe</h1>
@@ -15,6 +23,7 @@ const App = () => {
               value={value}
               key={index}
               index={index}
+              handleGamePlay={handleGamePlay}
             />
           
 
