@@ -17,12 +17,13 @@ When creating a project it is important to think about organization of your code
     -Use CSS: flex box to wrap and center gameboard
 
 - As a user, I can click on a square to mark it.
-    Branch:Mark it 
+    Branch: Mark it 
     -In SquareUI.js: Create onClick attribute on each square, inside the div tag. That onclick attribute wil be equal to a function. Create function to handle the onclick event.iNSIDE THIS FUNCTION WE WILL CALL another function that will handle the game play for this specific function we will pass in index. On our app .js componet we have to create this function that will handle the game play.Inside this function we need to UPDATE the state value after square is clicked. 
 
-
 - As a user, my partner can click on a square after me and see their mark.
-    Branch: 
+    Branch: player2-click
+    -Conditional if/else statements to determine if one index in the array equals anything else besides null. If one of those elements equals X, then switch to player 2. 
+    
 - As a user, I can't click on a square that has already been marked.
     Branch:
 - As a user, when either my partner or I win the game (three squares in a row: horizontally, vertically, or diagonally) I can see a notice telling me which player won.
